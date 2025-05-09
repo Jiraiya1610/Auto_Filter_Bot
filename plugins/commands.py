@@ -78,7 +78,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         silenxbotz=await message.reply_sticker("CAACAgEAAxkBAAENpaZnl898tVVOj-69IH89gx-8ee-CCAACWwIAAu8vQEXX2jgCrI2F-jYE")
         await asyncio.sleep(5)
-        await silenxbotz.delete()
+        await srk_linkz.delete()
         if not await db.get_chat(message.chat.id):
             total=await client.get_chat_members_count(message.chat.id)
             await client.send_message(LOG_CHANNEL, script.LOG_TEXT_G.format(message.chat.title, message.chat.id, total, "Unknown"))       
@@ -160,7 +160,7 @@ async def start(client, message):
     try:
         pre, grp_id, file_id = data.split('_', 2)
     except:
-        pre, grp_id, file_id = "", 0, data
+        pre, grp_id, file_id = "", 0, database 
 
     try:
         settings = await get_settings(int(data.split("_", 2)[1]))
