@@ -21,7 +21,7 @@ from pyrogram import Client
 from info import *
 
 
-class SilentXBot(Client):
+class srk_linkz(Client):
     def __init__(self):
         super().__init__(
             name=SESSION,
@@ -71,7 +71,7 @@ class SilentXBot(Client):
                 yield message
                 current += 1
       
-SilentX = SilentXBot()
+srk_linkz = srk_linkz()
 
 multi_clients = {}
 work_loads = {}
