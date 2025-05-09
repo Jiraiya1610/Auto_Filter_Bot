@@ -3,11 +3,11 @@ import logging
 from info import *
 from pyrogram import Client
 from Lucia.util.config_parser import TokenParser
-from . import multi_clients, work_loads, SilentX
+from . import multi_clients, work_loads, srk_linkz
 
 
 async def initialize_clients():
-    multi_clients[0] = SilentX
+    multi_clients[0] = srk_linkz
     work_loads[0] = 0
     all_tokens = TokenParser().parse_from_env()
     if not all_tokens:
