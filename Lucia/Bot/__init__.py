@@ -16,7 +16,7 @@ from info import *
 from utils import temp
 from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
-from aiohttp import web
+from Lucia.Bot import SilentX
 from pyrogram import Client
 from info import *
 
